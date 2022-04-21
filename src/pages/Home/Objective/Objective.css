@@ -1,0 +1,19 @@
+.obj {
+    background-color: rgba(225, 90, 90, 0.66);
+    /* background-color: darkblue;
+    background-color: #252B42; */
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* .back {
+    background-image: url(../../../Images/b3.jpg);
+
+    background-size: cover;
+    height: auto;
+    /* padding: auto; */
+/* width: 100%;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 255, 0.529); */
+
+/* }  */

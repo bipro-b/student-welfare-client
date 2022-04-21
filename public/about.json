@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1000",
+        "name": "Lucas ",
+        "position": "CEO",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "56000",
+        "pic": "https://i.ibb.co/DkFR3dp/my-pc.jpg"
+    },
+    {
+        "id": "1001",
+        "name": "Lambard Luish",
+        "position": "Co-Founder",
+        "age": "24",
+        "Location": "Dhanmondi",
+        "salary": "68000",
+        "pic": "https://www.linkpicture.com/q/b-100.jpg"
+    },
+    {
+        "id": "1002",
+        "name": "Ileana Rense",
+        "position": "Chairman",
+        "age": "28",
+        "Location": "gulshan",
+        "salary": "90000",
+        "pic": "https://randomuser.me/api/portraits/thumb/women/70.jpg"
+    },
+    {
+        "id": "1003",
+        "name": "Lenin Nancy",
+        "position": "Manager",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "89000",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/38.jpg"
+    },
+    {
+        "id": "1004",
+        "name": "Juice Keral",
+        "position": "Chief Instructor",
+        "age": "29",
+        "Location": "Savar",
+        "salary": "45500",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+    },
+    {
+        "id": "1005",
+        "name": "Bruice Jeri",
+        "position": "Associate Instructor",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "56000",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/85.jpg"
+    },
+    {
+        "id": "1006",
+        "name": "Dewis Teda",
+        "position": "General Instructor",
+        "age": "25",
+        "Location": "Borishal",
+        "salary": "56000",
+        "pic": "https://randomuser.me/api/portraits/thumb/women/75.jpg"
+    },
+    {
+        "id": "1007",
+        "name": "Quice Gency",
+        "position": "Instructor",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "90000",
+        "pic": "https://randomuser.me/api/portraits/thumb/women/71.jpg"
+    },
+    {
+        "id": "1008",
+        "name": "Pristol al",
+        "position": "Care Taker",
+        "age": "25",
+        "Location": "Gulsithan",
+        "salary": "56000",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/9.jpg"
+    }
+]

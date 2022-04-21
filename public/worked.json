@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1000",
+        "program": "Muktijodda honour",
+        "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, deleicous. ",
+        "price": "200",
+        "img": "https://www.ics.org.uk/media/529500/best%20student%20-prize%20winner_600x424.jpg"
+    },
+    {
+        "id": "1001",
+        "program": "Pohela Boishakh",
+        "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, deleicous. ",
+        "price": "300",
+        "img": "https://www.travel.taipei/content/images/articles/160422/1024x768_articles-image-0ws3iphfgksxlf8pm9oz2w.jpg"
+    },
+    {
+        "id": "1003",
+        "program": "Succesful student welfare",
+        "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, deleicous. ",
+        "price": "150",
+        "img": "https://www.dailynews.lk/sites/default/files/news/2017/11/13/z_p34-Royal.jpg"
+    }
+]
