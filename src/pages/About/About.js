@@ -29,11 +29,11 @@ const About = () => {
                     {
                         about.map(ab => (
 
-                            <Container className='mx-auto' >
+                            <Container className='' >
 
                                 <Col className="">
-                                    <Card className="card h-100  about">
-                                        <Card.Img style={{ borderRadius: "50%", padding: "6px" }} variant="top" src={ab.pic} />
+                                    <Card className="card h-100 mx-auto about">
+                                        <Card.Img style={{ borderRadius: "50%", width: '300px', height: '300px', margin: 'auto' }} variant="top" src={ab.pic} />
                                         <Card.Body>
                                             <Card.Title>Name:{ab.name}
                                             </Card.Title>

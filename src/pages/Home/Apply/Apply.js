@@ -19,7 +19,7 @@ const Shipping = () => {
     const [bookDetails, setBookDetails] = useState({});
 
     useEffect(() => {
-        fetch('/products.json')
+        fetch('https://warm-meadow-41881.herokuapp.com/members')
             .then(res => res.json())
             .then(data => setDetails(data));
     }, [])

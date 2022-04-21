@@ -12,6 +12,7 @@ import Gallery from "./pages/Gallery/Gallery";
 import Apply from "./pages/Home/Apply/Apply";
 import Home from './pages/Home/Home/Home'
 import Login from "./pages/Login/Login/Login";
+import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
 import Register from "./pages/Login/Register/Register";
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="home" element={<Home />} />
-            <Route path="apply" element={<Apply />} />
+            <Route path="apply" element={<PrivateRoute><Apply /></PrivateRoute>} />
             <Route path="about" element={<About />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="/login" element={<Login />} />

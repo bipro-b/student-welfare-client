@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.add-car {
+    background-color: rgba(0, 0, 0, 0.696);
+}
+
 .add-car form input,
 textarea {
     width: 40%;

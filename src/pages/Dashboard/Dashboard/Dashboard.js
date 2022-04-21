@@ -31,6 +31,8 @@ import Addmember from '../Addmember/Addmember';
 import Managemember from '../Managemember/Managemember';
 import Members from '../Members/Members';
 import Donate from '../Donate/Donate';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
 
 
 const drawerWidth = 200;
@@ -45,6 +47,13 @@ function Dashboard(props) {
         setMobileOpen(!mobileOpen);
     };
 
+    const [members, setMembers] = React.useState([]);
+    React.useEffect(() => {
+        fetch('https://warm-meadow-41881.herokuapp.com/users')
+            .then(res => res.json())
+            .then(data => setMembers(data));
+    }, [])
+    const { _id } = members;
     const drawer = (
         <div className='door'>
             <Toolbar />
@@ -57,7 +66,9 @@ function Dashboard(props) {
                 {admin || <Box>
                     <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageself`}> <Button color="inherit">ManageSelf</Button></Link><br />
                     <NavLink style={{ textDecoration: 'none' }} to="givereview"> <Button color="inherit">Review</Button></NavLink><br />
-                    <Link style={{ textDecoration: 'none' }} to={`/dashboard/payfee`}> <Button color="inherit">Pay Fee</Button></Link><br />
+                    <Link style={{ textDecoration: 'none' }} to={`/dashboard/payfee/${_id}`}>
+                        <Button color="inherit">Pay Fee</Button></Link><br />
+
                     <NavLink style={{ textDecoration: 'none' }} to="donate"> <Button color="inherit">Donate</Button></NavLink><br />
                     <br />
                     <Button onClick={logout} color="inherit">Logout</Button> <br />
@@ -66,7 +77,7 @@ function Dashboard(props) {
                 }
             </Box>
 
-            {admin || <Box sx={{ textAlign: 'left' }}>
+            {admin && <Box sx={{ textAlign: 'left' }}>
                 <Link style={{ textDecoration: 'none' }} to="makeAdmin"> <Button color="inherit">Make Admin</Button></Link><br />
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/managemember`}> <Button color="inherit">Manage Member</Button></Link><br />
                 {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
@@ -154,7 +165,7 @@ function Dashboard(props) {
                     <Route path="givereview" element={<GiveReview />}>
 
                     </Route>
-                    <Route path="payfee" element={<PayFee />} />
+                    <Route path="payfee/:payId" element={<PayFee />} />
                     <Route path="donate" element={<Donate />} />
 
 
@@ -162,7 +173,7 @@ function Dashboard(props) {
 
 
                     <Route path="addmember" element={<Addmember />} />
-                    {/* <Route path="makeAdmin" element={<AdminRoute><MakeAdmin /></AdminRoute>} /> */}
+                    <Route path="makeAdmin" element={<AdminRoute><MakeAdmin /></AdminRoute>} />
 
                     <Route path="managemember" element={<Managemember />} />
 

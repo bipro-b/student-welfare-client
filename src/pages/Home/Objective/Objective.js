@@ -31,7 +31,7 @@ const Objective = () => {
                 </div>
 
             </Container>
-            <Container className='mx-auto' style={{ backgroundColor: 'black', padding: '30px' }}>
+            <Container className='mx-auto' style={{ backgroundColor: 'rgba(0, 0, 0, 0.696)', padding: '30px' }}>
                 <h2 style={{ color: 'white' }}>Apply for new member</h2>
                 <Link to="/apply"> <button className="btn btn-success ">Apply</button></Link>
             </Container>
