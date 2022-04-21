@@ -26,8 +26,8 @@ const Addmember = () => {
                     <input type="number" {...register("age")} placeholder="Age" />
                     <input {...register("position", { required: true, maxLength: 20 })} placeholder="Designation" />
                     <input {...register("location", { required: true, maxLength: 20 })} placeholder="Location" />
-                    <textarea {...register("category")} placeholder="
-                    description" />
+                    {/*   <textarea {...register("category")} placeholder="
+                    description" /> */}
                     <input {...register('pic')} placeholder="upload image" />
                     <input type="submit" />
                 </form>
