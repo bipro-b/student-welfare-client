@@ -1,13 +1,13 @@
-[debug] [2022-04-21T04:58:43.186Z] ----------------------------------------------------------------------
-[debug] [2022-04-21T04:58:43.189Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-04-21T04:58:43.190Z] CLI Version:   10.6.0
-[debug] [2022-04-21T04:58:43.190Z] Platform:      win32
-[debug] [2022-04-21T04:58:43.190Z] Node Version:  v14.17.1
-[debug] [2022-04-21T04:58:43.191Z] Time:          Thu Apr 21 2022 10:58:43 GMT+0600 (Bangladesh Standard Time)
-[debug] [2022-04-21T04:58:43.192Z] ----------------------------------------------------------------------
+[debug] [2022-04-21T15:20:40.934Z] ----------------------------------------------------------------------
+[debug] [2022-04-21T15:20:40.937Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-21T15:20:40.938Z] CLI Version:   10.7.0
+[debug] [2022-04-21T15:20:40.938Z] Platform:      win32
+[debug] [2022-04-21T15:20:40.938Z] Node Version:  v14.17.1
+[debug] [2022-04-21T15:20:40.939Z] Time:          Thu Apr 21 2022 21:20:40 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-04-21T15:20:40.940Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-04-21T04:58:43.267Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-04-21T04:58:43.267Z] > authorizing via signed-in user (biprobarai1804058@gmail.com)
+[debug] [2022-04-21T15:20:41.018Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-21T15:20:41.018Z] > authorizing via signed-in user (biprobarai1804058@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -30,10 +30,10 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2022-04-21T04:58:50.729Z] Using project from CLI flag: lakhanda-student-welfare-asso
-[debug] [2022-04-21T04:58:50.733Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lakhanda-student-welfare-asso [none]
-[debug] [2022-04-21T04:59:11.850Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/lakhanda-student-welfare-asso
-[debug] [2022-04-21T04:59:14.733Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/lakhanda-student-welfare-asso
+[debug] [2022-04-21T15:20:52.228Z] Using project from CLI flag: lakhanda-student-welfare-asso
+[debug] [2022-04-21T15:20:52.231Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lakhanda-student-welfare-asso [none]
+[debug] [2022-04-21T15:21:03.402Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/lakhanda-student-welfare-asso
+[debug] [2022-04-21T15:21:03.411Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/lakhanda-student-welfare-asso
     at RetryOperation._fn (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:31)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)
 [error] 
