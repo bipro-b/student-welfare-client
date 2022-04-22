@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-// import logo from './logo.svg';
+
 import './App.css';
 import AuthProvider from "./Contexts/AuthProvider";
 import About from "./pages/About/About";
