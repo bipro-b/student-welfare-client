@@ -65,7 +65,7 @@ function Dashboard(props) {
 
 
                 {admin || <Box>
-                    <Link style={{ textDecoration: 'none' }} to={`/dashboard/myapply`}> <Button color="inherit">myapply</Button></Link><br />
+                    <Link style={{ textDecoration: 'none' }} to={`/dashboard/myapply`}> <Button color="inherit">My Apply</Button></Link><br />
                     <NavLink style={{ textDecoration: 'none' }} to="givereview"> <Button color="inherit">Review</Button></NavLink><br />
                     <Link style={{ textDecoration: 'none' }} to={`/dashboard/payfee/${_id}`}>
                         <Button color="inherit">Pay Fee</Button></Link><br />
