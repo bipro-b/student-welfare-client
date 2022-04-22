@@ -30,11 +30,29 @@ const Managemember = () => {
         }
     }
 
+
+
     return (
         <>
 
             <div className='mem'>
                 <h3 style={{ color: 'white' }}>Manage all Members</h3>
+                <div className='title'>
+                    <div>
+                        Name
+                    </div>
+                    <div>
+                        Designation
+                    </div>
+                    <div>
+                        Deletion
+                    </div>
+
+                    <div>
+                        Payment Status
+                    </div>
+
+                </div>
                 {
                     cars.map(car => <div className='edit my-2 ' key={car._id}>
 
@@ -42,7 +60,7 @@ const Managemember = () => {
                             {car.name}
                         </div>
                         <div>
-                            {car.designation}
+                            {car.position}
                         </div>
 
                         <div>

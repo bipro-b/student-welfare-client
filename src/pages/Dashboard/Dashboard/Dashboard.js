@@ -26,7 +26,6 @@ import { Button } from '@mui/material';
 import useAuth from '../../../Hooks/useAuth';
 import GiveReview from '../GiveReview/GiveReview';
 import PayFee from '../PayFee/PayFee';
-import ManageSelf from '../ManageSelf/ManageSelf';
 import Addmember from '../Addmember/Addmember';
 import Managemember from '../Managemember/Managemember';
 import Members from '../Members/Members';
@@ -34,6 +33,7 @@ import Donate from '../Donate/Donate';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageApplies from '../ManageApplies/ManageApplies';
+import MyApply from '../MyApply/MyApply';
 
 
 const drawerWidth = 200;
@@ -65,7 +65,7 @@ function Dashboard(props) {
 
 
                 {admin || <Box>
-                    <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageself`}> <Button color="inherit">ManageSelf</Button></Link><br />
+                    <Link style={{ textDecoration: 'none' }} to={`/dashboard/myapply`}> <Button color="inherit">myapply</Button></Link><br />
                     <NavLink style={{ textDecoration: 'none' }} to="givereview"> <Button color="inherit">Review</Button></NavLink><br />
                     <Link style={{ textDecoration: 'none' }} to={`/dashboard/payfee/${_id}`}>
                         <Button color="inherit">Pay Fee</Button></Link><br />
@@ -171,7 +171,7 @@ function Dashboard(props) {
                     <Route path="donate" element={<Donate />} />
 
 
-                    <Route path="manageself" element={<ManageSelf />} />
+                    <Route path="myapply" element={<MyApply />} />
                     <Route path="showapplies" element={<ManageApplies />} />
 
                     <Route path="addmember" element={<Addmember />} />

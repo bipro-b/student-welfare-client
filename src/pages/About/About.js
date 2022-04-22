@@ -29,16 +29,17 @@ const About = () => {
                     {
                         about.map(ab => (
 
-                            <Container className='' >
+                            <Container className=' ' >
 
-                                <Col className="">
-                                    <Card className="card h-100 mx-auto about">
-                                        <Card.Img style={{ borderRadius: "50%", width: '300px', height: '300px', margin: 'auto' }} variant="top" src={ab.pic} />
+                                <Col className=" ">
+                                    <Card className=" d-flex justify-content-center align-items-center card h-100 mx-auto about">
+                                        <Card.Img style={{ width: '200px', marginTop: '40px', borderRadius: "50%" }} variant="top" src={ab.pic} />
                                         <Card.Body>
                                             <Card.Title>Name:{ab.name}
                                             </Card.Title>
                                             <h4>Designation: {ab.position}</h4>
-
+                                            <Card.Title>SSC:{ab.sscpassed}
+                                            </Card.Title>
                                         </Card.Body>
 
                                     </Card>
