@@ -1,4 +1,4 @@
-# Project name: Lakhanda Student Welfare Assoiation
+# Project name: Lakhanda Student Welfare Association
 
 My project's live link: [Student Welfare](https://lakhanda-student-welfare-asso.firebaseapp.com/).
 
