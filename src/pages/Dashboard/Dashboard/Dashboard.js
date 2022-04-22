@@ -33,6 +33,7 @@ import Members from '../Members/Members';
 import Donate from '../Donate/Donate';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import ManageApplies from '../ManageApplies/ManageApplies';
 
 
 const drawerWidth = 200;
@@ -79,6 +80,7 @@ function Dashboard(props) {
 
             {admin && <Box sx={{ textAlign: 'left' }}>
                 <Link style={{ textDecoration: 'none' }} to="makeAdmin"> <Button color="inherit">Make Admin</Button></Link><br />
+                <Link style={{ textDecoration: 'none' }} to={`/dashboard/showapplies`}> <Button color="inherit">Show Application</Button></Link><br />
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/managemember`}> <Button color="inherit">Manage Member</Button></Link><br />
                 {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/addmember`}> <Button color="inherit">Add Member</Button></Link> <br />
@@ -170,7 +172,7 @@ function Dashboard(props) {
 
 
                     <Route path="manageself" element={<ManageSelf />} />
-
+                    <Route path="showapplies" element={<ManageApplies />} />
 
                     <Route path="addmember" element={<Addmember />} />
                     <Route path="makeAdmin" element={<AdminRoute><MakeAdmin /></AdminRoute>} />

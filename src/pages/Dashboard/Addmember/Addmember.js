@@ -23,9 +23,9 @@ const Addmember = () => {
                 <h3 style={{ color: 'white' }}>Add new Member</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
-                    <input type="number" {...register("age")} placeholder="Age" />
+                    <input type="number" {...register("sscpassed")} placeholder="ssc passed year" />
                     <input {...register("position", { required: true, maxLength: 20 })} placeholder="Designation" />
-                    <input {...register("location", { required: true, maxLength: 20 })} placeholder="Location" />
+                    {/* <input {...register("location", { required: true, maxLength: 20 })} placeholder="Location" /> */}
                     {/*   <textarea {...register("category")} placeholder="
                     description" /> */}
                     <input {...register('pic')} placeholder="upload image" />
