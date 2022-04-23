@@ -34,6 +34,7 @@ import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageApplies from '../ManageApplies/ManageApplies';
 import MyApply from '../MyApply/MyApply';
+import Show from '../Show/Show';
 
 
 const drawerWidth = 200;
@@ -180,7 +181,7 @@ function Dashboard(props) {
                     <Route path="managemember" element={<Managemember />} />
 
                     <Route path="members" element={<Members />} />
-
+                    <Route path="/" element={<Show />} />
 
                 </Routes>
 

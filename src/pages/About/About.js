@@ -33,7 +33,7 @@ const About = () => {
 
                                 <Col className=" ">
                                     <Card className=" d-flex justify-content-center align-items-center card h-100 mx-auto about">
-                                        <Card.Img style={{ width: '200px', marginTop: '40px', borderRadius: "50%" }} variant="top" src={ab.pic} />
+                                        <Card.Img style={{ width: '200px', height: '200px', marginTop: '40px', borderRadius: "50%" }} variant="top" src={ab.pic} />
                                         <Card.Body>
                                             <Card.Title>Name:{ab.name}
                                             </Card.Title>
