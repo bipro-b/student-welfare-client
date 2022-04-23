@@ -16,7 +16,7 @@ const NavBar = () => {
         <div className="header" >
             <Navbar bg='dark' style={{ color: 'rgba(0, 0, 0, 0.312)' }} variant={"dark"} expand="lg">
                 <Container>
-                    <Navbar.Brand href="home">Student welare</Navbar.Brand>
+                    <Navbar.Brand href="home">Student welfare</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
