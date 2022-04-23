@@ -1,5 +1,6 @@
 
 // import { Grid, Typography } from '@mui/material';
+import { Source } from '@mui/icons-material';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Col } from 'react-bootstrap';
@@ -8,7 +9,7 @@ import { useParams } from 'react-router';
 import useAuth from '../../../Hooks/useAuth';
 import Footer from '../../Shared/Footer/Footer';
 import NavBar from '../../Shared/NavBar/NavBar';
-
+import vidimgurl from '../../../../src/video/imgurl.mp4'
 import './Apply.css';
 
 const Shipping = () => {
@@ -66,7 +67,19 @@ const Shipping = () => {
 
                     </div>
                 </Col>
+                <div>
+                    <h3 className='mx-auto' style={{ color: 'yellow' }}>Please see the video to make your image url</h3>
+                    <video width="370" controls>
+                        <Source src="myVideo.webm" type="video/webm" />
+                        <source src={vidimgurl} type="video/mp4" />
+                        <p>Your browser doesn't support HTML5 video. Here is
+                            a <a href="https://youtu.be/JulvhQvhA00">link to the video</a> instead.</p>
+
+                    </video>
+                </div>
+
             </div>
+
             <Footer />
         </>
     );

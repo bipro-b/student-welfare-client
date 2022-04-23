@@ -11,9 +11,8 @@
 
 }
 
-.take form input,
-textarea {
-    width: 40%;
+.take form input {
+    width: 75%;
     margin-bottom: 10px;
     background-image: linear-gradient(rgba(0, 102, 255, 0.54), rgba(255, 255, 0, 0.567));
 }
