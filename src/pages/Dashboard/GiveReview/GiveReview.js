@@ -20,7 +20,7 @@ const GiveReview = () => {
         <>
 
             <div className="add-car">
-                <h3>Give a feedback </h3>
+                <h3 style={{ color: 'white' }}>Give a Review about our Club </h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name", { required: true, maxLength: 20 })} placeholder="Your Name" />
 
