@@ -3,18 +3,14 @@ import React, { useEffect, useState } from 'react';
 import './Managemember.css'
 const Managemember = () => {
     const [cars, setCars] = useState([]);
-    const [payStatus, setpayStatus] = useState([]);
+
     useEffect(() => {
         fetch('https://intense-wildwood-59281.herokuapp.com/members')
             .then(res => res.json())
             .then(data => setCars(data));
     }, [])
 
-    useEffect(() => {
-        fetch('https://intense-wildwood-59281.herokuapp.com/payments')
-            .then(res => res.json())
-            .then(data => setpayStatus(data));
-    }, [])
+
 
     // delete car 
     const handleDelete = id => {
@@ -52,11 +48,11 @@ const Managemember = () => {
                         Designation
                     </div>
                     <div>
-                        Deletion
-                    </div>
+                        Updation
 
+                    </div>
                     <div>
-                        Payment Status
+                        Deletion
                     </div>
 
                 </div>
@@ -71,21 +67,14 @@ const Managemember = () => {
                         </div>
 
                         <div>
-                            <Button onClick={() => handleDelete(car._id)} variant="text">Delete</Button>
+                            Update
                         </div>
                         <div>
-                            paid
+                            <Button onClick={() => handleDelete(car._id)} variant="text">Delete</Button>
                         </div>
-
-
-
-
-                        {/*< div className='col' > <h3 style={{ marginLeft: '30px', textAlign: 'left' }}>{car.course}</h3></div>
-                        <div className='col ' style={{ alignItems: 'center' }} >
-                            <Button onClick={() => handleDelete(car._id)} variant="contained">Delete</Button>
-                        </div> */}
                     </div>)
                 }
+
             </div>
 
         </>

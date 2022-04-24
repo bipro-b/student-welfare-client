@@ -28,13 +28,14 @@ import GiveReview from '../GiveReview/GiveReview';
 import PayFee from '../PayFee/PayFee';
 import Addmember from '../Addmember/Addmember';
 import Managemember from '../Managemember/Managemember';
-import Members from '../Members/Members';
+
 import Donate from '../Donate/Donate';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageApplies from '../ManageApplies/ManageApplies';
 import MyApply from '../MyApply/MyApply';
 import Show from '../Show/Show';
+import PaidMembers from '../PaidMembers/PaidMembers';
 
 
 const drawerWidth = 200;
@@ -85,6 +86,7 @@ function Dashboard(props) {
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/managemember`}> <Button color="inherit">Manage Member</Button></Link><br />
                 {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/addmember`}> <Button color="inherit">Add Member</Button></Link> <br />
+                <Link style={{ textDecoration: 'none' }} to={`/dashboard/paidmembers`}> <Button color="inherit">Paid Members</Button></Link> <br />
                 <Button onClick={logout} sx={{ color: 'white' }}>Logout</Button>
             </Box>}
 
@@ -175,12 +177,12 @@ function Dashboard(props) {
                     <Route path="myapply" element={<MyApply />} />
                     <Route path="showapplies" element={<ManageApplies />} />
 
-                    <Route path="addmember" element={<Addmember />} />
+                    <Route path="addmember" element={<AdminRoute><Addmember /></AdminRoute>} />
                     <Route path="makeAdmin" element={<AdminRoute><MakeAdmin /></AdminRoute>} />
 
-                    <Route path="managemember" element={<Managemember />} />
+                    <Route path="managemember" element={<AdminRoute><Managemember /></AdminRoute>} />
 
-                    <Route path="members" element={<Members />} />
+                    <Route path="paidmembers" element={<PaidMembers />} />
                     <Route path="/" element={<Show />} />
 
                 </Routes>

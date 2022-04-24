@@ -10,7 +10,7 @@ const ManageApplies = () => {
 
     return (
         <>
-            <h3>All application</h3>
+
 
             <div className='apply'>
                 <h3 style={{ color: 'white' }}>All application</h3>
@@ -44,8 +44,9 @@ const ManageApplies = () => {
                             <div>
                                 {order.position}
                             </div>
-                            <div>
-                                <img src={order.pic} style={{ width: '30px', borderRadius: '50%' }} alt="" />
+                            <div >
+
+                                {order.pic}
                             </div>
 
                         </div>
