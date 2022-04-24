@@ -7,8 +7,10 @@ const ManageApplies = () => {
             .then(res => res.json())
             .then(data => setApplies(data));
     }, [])
+
     return (
         <>
+            <h3>All application</h3>
 
             <div className='apply'>
                 <h3 style={{ color: 'white' }}>All application</h3>
@@ -29,30 +31,32 @@ const ManageApplies = () => {
 
                 </div>
 
+
                 {
-                    applies.map(apply => <div key={apply._id}>
+                    applies.map(order => <div key={order._id}>
                         <div className='allenr my-2'>
                             <div>
-                                {apply?.name}
+                                {order?.name}
                             </div>
                             <div>
-                                {apply.sscpassed}
+                                {order.sscpassed}
                             </div>
                             <div>
-                                {apply.position}
+                                {order.position}
                             </div>
-
                             <div>
-                                {apply.pic}
+                                Paid
                             </div>
 
                         </div>
 
 
+
                     </div>)
                 }
-            </div>
 
+
+            </div>
         </>
     );
 };

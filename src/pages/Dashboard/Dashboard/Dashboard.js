@@ -81,7 +81,7 @@ function Dashboard(props) {
 
             {admin && <Box sx={{ textAlign: 'left' }}>
                 <Link style={{ textDecoration: 'none' }} to="makeAdmin"> <Button color="inherit">Make Admin</Button></Link><br />
-                <Link style={{ textDecoration: 'none' }} to={`/dashboard/showapplies`}> <Button color="inherit">Show Application</Button></Link><br />
+                <Link style={{ textDecoration: 'none' }} to={`/dashboard/showapplies`}> <Button color="inherit">All Application</Button></Link><br />
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/managemember`}> <Button color="inherit">Manage Member</Button></Link><br />
                 {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/addmember`}> <Button color="inherit">Add Member</Button></Link> <br />
