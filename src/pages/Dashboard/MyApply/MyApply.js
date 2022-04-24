@@ -52,8 +52,8 @@ const MyOrder = () => {
                     orders.map(order => <div key={order._id}>
 
                         <div className='enr my-2'>
-                            <div>
-                                {order.name}
+                            <div style={{ textAlign: 'left', marginLeft: '10px' }}>
+                                <img src={order.pic} style={{ width: '30px', borderRadius: '50%' }} alt="" />  {order.name}
                             </div>
                             <div>
                                 {order.position}

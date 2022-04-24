@@ -56,8 +56,8 @@ const Managemember = () => {
                 {
                     cars.map(car => <div className='edit my-2 ' key={car._id}>
 
-                        <div>
-                            {car.name}
+                        <div style={{ textAlign: 'left', marginLeft: '10px' }}>
+                            <img src={car.pic} style={{ width: '30px', borderRadius: '50%' }} alt="" />  {car.name}
                         </div>
                         <div>
                             {car.position}

@@ -45,7 +45,7 @@ const ManageApplies = () => {
                                 {order.position}
                             </div>
                             <div>
-                                Paid
+                                <img src={order.pic} style={{ width: '30px', borderRadius: '50%' }} alt="" />
                             </div>
 
                         </div>
