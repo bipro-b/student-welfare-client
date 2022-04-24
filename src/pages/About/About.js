@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import Footer from '../Shared/Footer/Footer';
+
 import NavBar from '../Shared/NavBar/NavBar';
 
 // import './About.css'
@@ -19,13 +19,13 @@ const About = () => {
         <div >
 
             <NavBar />
-            <Container className="my-5">
+            <Container className="pb-4 mt-3">
                 <div className="mx-auto d-flex justify-content-center">
-                    <p style={{ width: "500px", color: "white", backgroundColor: "grey", borderRadius: "7px", textAlign: "left", padding: "10px" }}>Group members list of our teams are given with their activities.The members of our group are much dedicated . They are alwayas ready for support for leanrer.
+                    <p style={{ width: "500px", color: "white", backgroundColor: "grey", borderRadius: "7px", textAlign: "left", padding: "10px" }}>Group members list of our association's is given with their designation.The members of our association are much dedicated . They are alwayas ready for support for rural students.
                     </p>
                 </div>
 
-                <Row md={2} lg={3} className=" mx-auto g-5">
+                <Row md={2} lg={3} className=" mx-auto g-4">
                     {
                         about.map(ab => (
 
@@ -51,7 +51,7 @@ const About = () => {
                 </Row>
 
             </Container>
-            <Footer />
+
         </div>
     );
 };

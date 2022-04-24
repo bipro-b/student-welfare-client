@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import Footer from '../../Shared/Footer/Footer';
-// import './CustomerReview.css'
+
 
 const GiveReview = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -27,11 +26,11 @@ const GiveReview = () => {
                     <textarea {...register("comment")} placeholder="Write your comment" />
                     <input type="number" {...register("rating")} placeholder="rating us 0-5" />
 
-                    <input type="submit" />
+                    <input style={{ backgroundColor: 'goldenrod' }} type="submit" />
                 </form>
 
             </div>
-            <Footer></Footer>
+
         </>
     );
 };

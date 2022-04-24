@@ -61,10 +61,10 @@ const PayFee = () => {
                             <input type="number" {...register("phone", { required: true })} placeholder="your phone number" />
                             <input type="number" {...register("amount", { required: true })} placeholder="Write amount" />
 
-                            <input type="string" {...register("tid")} placeholder="For Bkash Payment write TnxID" />
-                            <input type="string" {...register("payto", { required: true })} placeholder="Pay to Bkash Number/ Name " />
-
-                            <input type="submit" />
+                            <input type="string" {...register("tid")} placeholder="TnxId of Bkash/others" />
+                            <input type="string" {...register("payto", { required: true })} placeholder="Name/Sent Bkash number" />
+                            q
+                            <input style={{ backgroundColor: 'goldenrod' }} type="submit" />
                         </form>
 
                     </div>

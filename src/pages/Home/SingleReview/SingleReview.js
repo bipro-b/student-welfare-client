@@ -9,7 +9,7 @@ const SingleReview = (props) => {
     console.log(props.review)
     return (
         <Grid item xs={4} sm={4} md={4} >
-            <Card sx={{ minWidth: 350, border: 0, boxShadow: 0 }}>
+            <Card sm={{ minWidth: 300, border: 0, boxShadow: 0 }}>
 
                 <CardContent sx={{ textAlign: 'left' }}>
 

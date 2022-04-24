@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgba(0, 0, 0, 0.858);
+    background-color: rgba(0, 0, 0, 0.655);
     color: rgba(255, 255, 255, 0.712);
     padding: 25px 0 25px 0;
     border-radius: 5px;
@@ -9,4 +9,5 @@
 
 .font-icon i {
     font-size: 20px;
+
 }

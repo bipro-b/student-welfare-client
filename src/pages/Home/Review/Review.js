@@ -1,6 +1,7 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 import SingleReview from '../SingleReview/SingleReview';
 
 import './Review.css'
@@ -13,23 +14,37 @@ const Review = () => {
     }, [])
     // console.log(reviews);
     return (
-        <Box sx={{ flexGrow: 1 }} className="review">
-            <Container>
-                <Typography sx={{ fontWeight: 500, color: 'white', my: 2 }} variant="h6" component="div">
+        <Container>
+            <Box sx={{ flexGrow: 1 }} className="review mb-5 pb-5">
+
+                <Typography sx={{ fontWeight: 500, color: 'white', my: 5 }} variant="h6" component="div">
                     Our local people's Review
                 </Typography>
 
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
-                        reviews.map(review => <SingleReview key={review._id} review={review}>
+                        reviews.map((review, index) => {
+                            if (index >= 9) return null;
+                            return (
+                                <SingleReview key={review._id} review={review}> </SingleReview>
 
-                        </SingleReview>)
+                            )
 
+                        })
                     }
                 </Grid>
-            </Container>
-        </Box>
+            </Box>
+        </Container>
     );
 };
 
 export default Review;
+
+
+// reviews.map(review => <SingleReview key={review._id} review={review}>
+
+//     </SingleReview>)
+
+// services.map((service, index) => {
+//     if (index >= 3) return null;
+//     return (

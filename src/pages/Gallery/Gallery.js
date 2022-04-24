@@ -10,10 +10,10 @@ const Gallery = () => {
             .then(data => setImage(data))
     }, [])
     return (
-        <div>
+        <div >
             <NavBar />
-            <Container>
-                <Row sm={1} md={2} lg={3} className="  g-2">
+            <Container className='pb-4'>
+                <Row sm={1} md={2} lg={3} className="  g-3">
                     {
                         image.map(ab => (
 

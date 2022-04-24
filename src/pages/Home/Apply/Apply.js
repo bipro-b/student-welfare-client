@@ -7,7 +7,7 @@ import { Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../../Hooks/useAuth';
-import Footer from '../../Shared/Footer/Footer';
+
 import NavBar from '../../Shared/NavBar/NavBar';
 import './Apply.css';
 // const imgulr = { 'https://youtu.be/JulvhQvhA00'}
@@ -62,21 +62,21 @@ const Shipping = () => {
                             <input type="number" {...register("phone")} placeholder="your phone number" />
                             <input {...register('pic')} placeholder="upload  image/url" />
 
-                            <input type="submit" />
+                            <input style={{ backgroundColor: 'goldenrod' }} type="submit" />
                         </form>
 
                     </div>
                 </Col>
                 <div>
                     <h3 className='mx-auto' style={{ color: 'yellow' }}>Please see the video to make your image url</h3>
-                    <iframe title="Image URL" width="370" height="370px"
+                    <iframe title="Image URL" width="300" height="370px"
                         src="https://www.youtube.com/embed/JulvhQvhA00">
                     </iframe>
                 </div>
 
             </div>
 
-            <Footer />
+
         </>
     );
 };
