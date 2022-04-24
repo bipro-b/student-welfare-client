@@ -3,7 +3,7 @@ import './ManageApplies.css'
 const ManageApplies = () => {
     const [applies, setApplies] = useState([])
     useEffect(() => {
-        fetch('https://warm-meadow-41881.herokuapp.com/applies')
+        fetch('https://intense-wildwood-59281.herokuapp.com/applies')
             .then(res => res.json())
             .then(data => setApplies(data));
     }, [])

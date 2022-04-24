@@ -9,7 +9,7 @@ const About = () => {
     const [about, setAbout] = useState([]);
     //Fake data is loading 
     useEffect(() => {
-        fetch('https://warm-meadow-41881.herokuapp.com/members')
+        fetch('https://intense-wildwood-59281.herokuapp.com/members')
             .then(res => res.json())
             .then(data => setAbout(data));
     }, [])

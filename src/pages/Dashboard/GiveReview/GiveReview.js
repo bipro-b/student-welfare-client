@@ -8,7 +8,7 @@ const GiveReview = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://warm-meadow-41881.herokuapp.com/review', data)
+        axios.post('https://intense-wildwood-59281.herokuapp.com/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added successfullt');

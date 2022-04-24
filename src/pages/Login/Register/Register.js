@@ -36,15 +36,16 @@ const Register = () => {
             <Container style={{ backgroundColor: 'rgba(255, 255, 255, 0.625)' }}>
                 <Grid container spacing={2} sx={{ marginTop: '50px' }}>
                     <Grid item sm={12}>
-                        <Typography variant="body1" sx={{ color: 'black', fontSize: '27px' }} gutterBottom>
+                        <Typography variant="body1" sx={{ color: 'black bold', fontSize: '27px' }} gutterBottom>
                             Register Here
                             {!isLoading && <form onSubmit={handleLoginSubmit}>
                                 <TextField
                                     sx={{ width: '75%', m: 1 }}
-                                    id="standard-basic" label="Your name"
+                                    id="standard-basic" label="Your First Name"
                                     name="name"
                                     onBlur={handleBlur}
                                     type="name"
+                                    placeholder='your first name like "Bipro" '
                                     variant="standard" />
                                 <TextField
                                     sx={{ width: '75%', m: 1, color: 'white' }}

@@ -3,17 +3,24 @@ import React, { useEffect, useState } from 'react';
 import './Managemember.css'
 const Managemember = () => {
     const [cars, setCars] = useState([]);
+    const [payStatus, setpayStatus] = useState([]);
     useEffect(() => {
-        fetch('https://warm-meadow-41881.herokuapp.com/members')
+        fetch('https://intense-wildwood-59281.herokuapp.com/members')
             .then(res => res.json())
             .then(data => setCars(data));
+    }, [])
+
+    useEffect(() => {
+        fetch('https://intense-wildwood-59281.herokuapp.com/payments')
+            .then(res => res.json())
+            .then(data => setpayStatus(data));
     }, [])
 
     // delete car 
     const handleDelete = id => {
         const proceed = window.confirm('Are you want to delete?')
         if (proceed) {
-            const url = `https://warm-meadow-41881.herokuapp.com/members/${id}`;
+            const url = `https://intense-wildwood-59281.herokuapp.com/members/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })

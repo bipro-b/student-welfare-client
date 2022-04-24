@@ -6,7 +6,7 @@ const MyOrder = () => {
     const { user } = useAuth()
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch(`https://warm-meadow-41881.herokuapp.com/applies?email=${user.email}`)
+        fetch(`https://intense-wildwood-59281.herokuapp.com/applies?email=${user.email}`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [user.email])
@@ -15,7 +15,7 @@ const MyOrder = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you want to delete?')
         if (proceed) {
-            const url = `https://warm-meadow-41881.herokuapp.com/applies/${id}`;
+            const url = `https://intense-wildwood-59281.herokuapp.com/applies/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })

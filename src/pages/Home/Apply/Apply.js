@@ -19,7 +19,7 @@ const Shipping = () => {
     const [bookDetails, setBookDetails] = useState({});
 
     useEffect(() => {
-        fetch('https://warm-meadow-41881.herokuapp.com/members')
+        fetch('https://intense-wildwood-59281.herokuapp.com/members')
             .then(res => res.json())
             .then(data => setDetails(data));
     }, [])
@@ -34,7 +34,7 @@ const Shipping = () => {
 
     const onSubmit = data => {
 
-        axios.post('https://warm-meadow-41881.herokuapp.com/applies', data)
+        axios.post('https://intense-wildwood-59281.herokuapp.com/applies', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Applied successfully');
@@ -50,7 +50,8 @@ const Shipping = () => {
                 <Col col-md-12 >
                     <div className="fform">
                         <h3 style={{ color: 'white' }}>Fill the form for Application</h3>
-                        <input defaultValue={user?.displayName} {...register("displayName", { required: true, maxLength: 20 })} />
+                        <span style={{ color: 'white', fontSize: '20px' }}>Hey, {user?.displayName}</span>
+                        {/* <input defaultValue={user?.displayName} {...register("displayName", { required: true, maxLength: 20 })} /> */}
                         <form onSubmit={handleSubmit(onSubmit)} className='point'>
                             <input defaultValue={bookDetails?.name} {...register("name", { required: true })} placeholder="Your Full name" />
                             <input defaultValue={user?.email} {...register("email", { required: true, maxLength: 50 })} />
