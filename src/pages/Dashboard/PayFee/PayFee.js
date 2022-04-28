@@ -47,7 +47,7 @@ const PayFee = () => {
 
             <div className='row take'>
                 <div className='pay'>
-                    <h2 style={{ color: 'black' }}>Please pay to our koshadokkho</h2>
+                    <h2 style={{ color: 'black' }}>Please pay to our Cashier</h2>
                     <h3 style={{ backgroundColor: 'black', color: 'red' }}>Obviously fill the form otherwise you will be shown unpaid</h3>
                 </div>
                 <Col col-md-12 >

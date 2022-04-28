@@ -24,7 +24,7 @@ const Addmember = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                     <input type="number" {...register("sscpassed")} placeholder="ssc passed year" />
-                    <input {...register("position", { required: true, maxLength: 20 })} placeholder="Designation" />
+                    <input {...register("position", { required: true, maxLength: 50 })} placeholder="Designation" />
                     {/* <input {...register("location", { required: true, maxLength: 20 })} placeholder="Location" /> */}
                     {/*   <textarea {...register("category")} placeholder="
                     description" /> */}

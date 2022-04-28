@@ -55,8 +55,9 @@ const Shipping = () => {
                         <form onSubmit={handleSubmit(onSubmit)} className='point'>
                             <input defaultValue={bookDetails?.name} {...register("name", { required: true })} placeholder="Your Full name" />
                             <input defaultValue={user?.email} {...register("email", { required: true, maxLength: 50 })} />
-                            <input  {...register("position", { required: true })} placeholder="designation" />
-                            <input type="number" {...register("sscpassed")} placeholder="ssc Passed year like 2016" />
+                            <input type="text" {...register("position", { required: true })} placeholder="Occupation" />
+                            <input type="text" {...register("edu", { required: true })} placeholder="Your Educational institution" />
+                            <input type="number" {...register("sscpassed")} placeholder="ssc Passed year Like 2016" />
 
                             <input type="address" {...register("location")} placeholder="Location" />
                             <input type="number" {...register("phone")} placeholder="your phone number" />
